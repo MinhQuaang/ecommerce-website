@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Menu() {
+function MainMenu() {
   const menuList = [
     {
       id: 1,
@@ -29,19 +29,21 @@ function Menu() {
     },
   ];
   return (
-    <ul className="flex">
-      {menuList?.map(({ id, title, path }) => (
-        <li key={id}>
-          <Link
-            to={path}
-            className="block px-4 py-5 text-sm text-[#111111] hover:text-primary"
-          >
-            {title}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className="hidden lg:flex">
+        {menuList?.map(({ id, title, path }) => (
+          <li key={id}>
+            <Link
+              to={path}
+              className="block px-4 text-sm text-[#111111] hover:text-primary"
+            >
+              {title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 
-export default Menu;
+export default MainMenu;
