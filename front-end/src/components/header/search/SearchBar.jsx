@@ -1,10 +1,25 @@
 import { FaSearch } from "react-icons/fa";
+import SearchDrawer from "./SearchDrawer";
+import { useState } from "react";
 
 function SearchBar() {
+  const [showSearchDrawer, setShowSearchDrawer] = useState(false);
+
+  const handleCloseSearchDrawer = () => {
+    setShowSearchDrawer(false);
+  };
   return (
     <div>
-      <input type="text" placeholder="Search for products..." />
-      <FaSearch />
+      <FaSearch
+        className="cursor-pointer hover:text-primary"
+        onClick={() => {
+          setShowSearchDrawer(true);
+        }}
+      />
+      <SearchDrawer
+        show={showSearchDrawer}
+        handleClose={handleCloseSearchDrawer}
+      />
     </div>
   );
 }

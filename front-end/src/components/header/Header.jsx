@@ -1,6 +1,6 @@
 import Logo from "@/assets/logo.avif";
 import { Link } from "react-router-dom";
-import { FaSearch, FaCartPlus, FaHeart, FaUser, FaBars } from "react-icons/fa";
+import { FaCartPlus, FaHeart, FaUser, FaBars } from "react-icons/fa";
 
 import Menu from "./menu/MainMenu";
 import MenuMobile from "./menu/MenuMobile";
@@ -27,7 +27,7 @@ function Header() {
         </Link>
         <Menu />
       </div>
-      <div className="flex items-center gap-5 text-lg cursor-pointer">
+      <div className="flex items-center gap-5 text-lg">
         <div>
           <SearchBar />
         </div>
