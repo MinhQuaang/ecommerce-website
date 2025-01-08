@@ -13,7 +13,7 @@ function Header() {
     setIsOpenMenu(false);
   };
   return (
-    <header className="xl:container mx-auto flex items-center justify-between px-4 relative">
+    <header className="xl:container mx-auto flex items-center justify-between px-4 relative py-2 lg:py-0">
       <div className="flex items-center">
         <div className="p-3 lg:hidden">
           <FaBars

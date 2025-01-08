@@ -11,10 +11,7 @@ function PreSearch() {
         ))}
       </div>
       <div className="flex justify-center mt-4">
-        <Link
-          to="#"
-          className="btn-primary inline-block text-sm text-white bg-primary rounded-none hover:bg-black"
-        >
+        <Link to="#" className="btn-primary">
           View all
         </Link>
       </div>

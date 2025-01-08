@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function MegaMenu({ item }) {
   return (
-    <div className="absolute min-h-[400px] bg-white w-4/5 top-full left-0 shadow-[0px_0px_6px_#eee] py-7 px-8 grid grid-cols-4 gap-5 duration-150 translate-y-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+    <div className="absolute min-h-[400px] bg-white w-4/5 top-full left-0 shadow-[0px_0px_6px_#eee] z-50 py-7 px-8 grid grid-cols-4 gap-5 duration-150 translate-y-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
       {item?.map(({ id, title, products }) => (
         <div key={id}>
           <h1 className="py-1 text-[13px] font-medium uppercase">{title}</h1>

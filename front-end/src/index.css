@@ -31,6 +31,10 @@
 
 @layer components {
   .btn-primary {
-    @apply py-4 px-8 uppercase transition-all duration-200 rounded-md;
+    @apply py-4 px-8 uppercase transition-all duration-200 inline-block text-sm text-white bg-primary rounded-none hover:bg-black;
   }
+}
+
+.slick-active.slick-current .text {
+  @apply scale-100 duration-1000 opacity-100;
 }
